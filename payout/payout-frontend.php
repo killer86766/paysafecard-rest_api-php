@@ -96,7 +96,7 @@ if (isset($_POST["action"])) {
             $logger->log($pscpayout->getRequest(), $pscpayout->getCurl(), $pscpayout->getResponse());
         }
 
-        // reponse handling
+        // response handling
         if ($response == false) {
             $error = $pscpayout->getError();
             printError($pscpayout, $config['debug_level']);
@@ -192,7 +192,7 @@ if (isset($_POST["action"])) {
 // get the current URL
 function getURL()
 {
-    $s        = empty($_SERVER["HTTPS"]) ? '' : ($_SERVER["HTTPS"] == "on") ? "s" : "";
+    $s        = empty($_SERVER["HTTPS"]) ? '' : (($_SERVER["HTTPS"] == "on") ? "s" : "");
     $sp       = strtolower($_SERVER["SERVER_PROTOCOL"]);
     $protocol = substr($sp, 0, strpos($sp, "/")) . $s;
     return $protocol . "://" . $_SERVER['SERVER_NAME'] . dirname($_SERVER['PHP_SELF']);

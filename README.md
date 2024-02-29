@@ -18,13 +18,14 @@ How to integrate paysafecards API:
 4. Make the service center integration test.
 
 # Payment API classes & examples
-For detailed informations have a look into the examples provided for several coding languages. 
+For detailed information have a look into the examples provided for several coding languages. 
 Basic usage is provided within the languages README.md.
 
-# Authentification key
+# Authentication key
 You can get your testing key after the registration for a business account:
 https://www.paysafecard.com/business/
 
 # Payout & Refund
 Not per default active. Special agreement with paysafecard necessary. 
 Please talk before the implementation with the paysafecard sales team. success@paysafecard.com
+ 
